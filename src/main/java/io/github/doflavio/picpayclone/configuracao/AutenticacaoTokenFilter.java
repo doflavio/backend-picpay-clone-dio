@@ -7,13 +7,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import io.github.doflavio.picpayclone.modelo.Usuario;
+import io.github.doflavio.picpayclone.repository.UsuarioRepository;
+import io.github.doflavio.picpayclone.service.impl.TokenService;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import br.com.dio.picpayclone.modelo.Usuario;
-import br.com.dio.picpayclone.repository.UsuarioRepository;
-import br.com.dio.picpayclone.service.impl.TokenService;
+
 
 public class AutenticacaoTokenFilter extends OncePerRequestFilter {
 

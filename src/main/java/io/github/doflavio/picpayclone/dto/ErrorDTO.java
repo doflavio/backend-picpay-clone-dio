@@ -13,13 +13,5 @@ public class ErrorDTO {
 
 	private String campo;
 	private String mensagem;
-	
-	public ErrorDTO(String campo, String mensagem) {
-		super();
-		this.campo = campo;
-		this.mensagem = mensagem;
-	}
-	
-	
 
 }
