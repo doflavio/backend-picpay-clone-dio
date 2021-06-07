@@ -18,10 +18,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
 import io.github.doflavio.picpayclone.enums.TipoPermissao;
 
 /*import org.springframework.security.core.GrantedAuthority;
@@ -115,5 +111,11 @@ public class Usuario extends EntidadeBase implements UserDetails {
 	public boolean isEnabled() {
 		return this.ativo;
 	}
+
+	public TipoPermissao getPermissao() {
+		return permissao;
+	}
+	
+	
 
 }
